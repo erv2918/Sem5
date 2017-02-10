@@ -28,7 +28,24 @@
             End If
             index += 1
         End While
-
         Return posicion
     End Function
+    Function Ejercicio5(palabra1 As String, palabra2 As String) As Integer
+        Dim result = 0
+        If palabra1.Length = palabra2.Length Then
+            Dim index As Integer = 1
+            While palabra1.Chars(index) = palabra2.Chars(index) And index < palabra1.Length - 1
+                index += 1
+            End While
+            If index = palabra1.Length - 1 Then
+                result = 1
+            End If
+        End If
+        Return result
+    End Function
+
+    Private Sub btnFuncion5_Click(sender As Object, e As EventArgs) Handles btnFuncion5.Click
+        Dim vec() As String = Split(txtPalabra.Text, ",")
+        txtResultado.Text = Ejercicio5(vec(0), vec(1))
+    End Sub
 End Class
