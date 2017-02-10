@@ -1,9 +1,24 @@
 ﻿Public Class Form1
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFuncion1.Click
-
+    Dim Palabra As String = " "
+    Private Sub btnFuncion1_Click(sender As Object, e As EventArgs) Handles btnFuncion1.Click
+        txtResultado.Text = Ejercicio1(txtPalabra.Text)
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Function Ejercicio1(palabra As String) As String
+        Dim invierte As String = StrReverse(palabra)
+        Return invierte
+    End Function
+
+    Private Sub txtCerrar_Click(sender As Object, e As EventArgs) Handles txtCerrar.Click
+        End
+    End Sub
+
+    Private Sub btnFuncion2_Click(sender As Object, e As EventArgs) Handles btnFuncion2.Click
 
     End Sub
+    Function Ejercicio2(palabra As String, letra As Char) As Integer
+        Dim posicion As Integer = -1
+
+        Return posicion
+    End Function
 End Class

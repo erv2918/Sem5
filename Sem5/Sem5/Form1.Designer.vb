@@ -29,10 +29,11 @@ Partial Class Form1
         Me.btnFuncion5 = New System.Windows.Forms.Button()
         Me.btnFuncion6 = New System.Windows.Forms.Button()
         Me.btnFuncion7 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtPalabra = New System.Windows.Forms.TextBox()
+        Me.txtResultado = New System.Windows.Forms.TextBox()
         Me.lblTexto = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCerrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnFuncion1
@@ -98,19 +99,19 @@ Partial Class Form1
         Me.btnFuncion7.Text = "FUNCION 7"
         Me.btnFuncion7.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtPalabra
         '
-        Me.TextBox1.Location = New System.Drawing.Point(119, 60)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(198, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txtPalabra.Location = New System.Drawing.Point(119, 60)
+        Me.txtPalabra.Name = "txtPalabra"
+        Me.txtPalabra.Size = New System.Drawing.Size(198, 20)
+        Me.txtPalabra.TabIndex = 7
         '
-        'TextBox2
+        'txtResultado
         '
-        Me.TextBox2.Location = New System.Drawing.Point(119, 131)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(198, 20)
-        Me.TextBox2.TabIndex = 8
+        Me.txtResultado.Location = New System.Drawing.Point(119, 131)
+        Me.txtResultado.Name = "txtResultado"
+        Me.txtResultado.Size = New System.Drawing.Size(198, 20)
+        Me.txtResultado.TabIndex = 8
         '
         'lblTexto
         '
@@ -130,15 +131,25 @@ Partial Class Form1
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "RESULTADO"
         '
+        'txtCerrar
+        '
+        Me.txtCerrar.Location = New System.Drawing.Point(298, 226)
+        Me.txtCerrar.Name = "txtCerrar"
+        Me.txtCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.txtCerrar.TabIndex = 11
+        Me.txtCerrar.Text = "CERRAR"
+        Me.txtCerrar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(385, 261)
+        Me.Controls.Add(Me.txtCerrar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblTexto)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtResultado)
+        Me.Controls.Add(Me.txtPalabra)
         Me.Controls.Add(Me.btnFuncion7)
         Me.Controls.Add(Me.btnFuncion6)
         Me.Controls.Add(Me.btnFuncion5)
@@ -160,8 +171,9 @@ Partial Class Form1
     Friend WithEvents btnFuncion5 As Button
     Friend WithEvents btnFuncion6 As Button
     Friend WithEvents btnFuncion7 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtPalabra As TextBox
+    Friend WithEvents txtResultado As TextBox
     Friend WithEvents lblTexto As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtCerrar As Button
 End Class
