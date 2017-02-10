@@ -15,7 +15,7 @@
 
     Private Sub btnFuncion2_Click(sender As Object, e As EventArgs) Handles btnFuncion2.Click
         Dim vec() As String = Split(txtPalabra.Text, ",")
-        txtResultado.Text = Ejercicio2(vec(0), (vec(1)))
+        txtResultado.Text = Ejercicio2(vec(0), vec(1))
     End Sub
     Function Ejercicio2(palabra As String, letra As String) As Integer
         Dim posicion As Integer = -1

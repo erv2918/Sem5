@@ -101,14 +101,14 @@ Partial Class Form1
         '
         'txtPalabra
         '
-        Me.txtPalabra.Location = New System.Drawing.Point(119, 60)
+        Me.txtPalabra.Location = New System.Drawing.Point(175, 55)
         Me.txtPalabra.Name = "txtPalabra"
         Me.txtPalabra.Size = New System.Drawing.Size(198, 20)
         Me.txtPalabra.TabIndex = 7
         '
         'txtResultado
         '
-        Me.txtResultado.Location = New System.Drawing.Point(119, 131)
+        Me.txtResultado.Location = New System.Drawing.Point(175, 124)
         Me.txtResultado.Name = "txtResultado"
         Me.txtResultado.Size = New System.Drawing.Size(198, 20)
         Me.txtResultado.TabIndex = 8
@@ -116,7 +116,7 @@ Partial Class Form1
         'lblTexto
         '
         Me.lblTexto.AutoSize = True
-        Me.lblTexto.Location = New System.Drawing.Point(158, 44)
+        Me.lblTexto.Location = New System.Drawing.Point(218, 39)
         Me.lblTexto.Name = "lblTexto"
         Me.lblTexto.Size = New System.Drawing.Size(139, 13)
         Me.lblTexto.TabIndex = 9
@@ -125,7 +125,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(183, 115)
+        Me.Label1.Location = New System.Drawing.Point(251, 102)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 10
